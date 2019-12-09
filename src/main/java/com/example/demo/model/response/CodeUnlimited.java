@@ -23,7 +23,7 @@ import java.nio.Buffer;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CodeUnlimit extends WeChatBaseResonse {
+public class CodeUnlimited extends WeChatBaseResonse {
     /**
      * default:
      * description:

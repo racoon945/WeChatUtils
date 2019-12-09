@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.model.query.CreateQRCodeQuery;
 import com.example.demo.util.WeChatUtil;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeChatController {
     // @PostMapping(value = "/getCode",produces = MediaType.IMAGE_JPEG_VALUE)
     @PostMapping(value = "/getCode")
-    public Object getCode(CreateQRCodeQuery query){
+    public Object getCode(@RequestBody CreateQRCodeQuery query){
         return  WeChatUtil.getImageBuffer(query);
     }
 }
