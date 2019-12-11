@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
-public class AccessToken extends WeChatBaseResonse{
+public class AccessToken extends WeChatBaseResponse {
     /**
      * default:
      * description: 获取到的凭证

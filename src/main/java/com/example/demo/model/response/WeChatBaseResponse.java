@@ -1,7 +1,6 @@
 package com.example.demo.model.response;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WeChatBaseResonse {
+public class WeChatBaseResponse {
     /**
      * default:
      * description: 错误码
